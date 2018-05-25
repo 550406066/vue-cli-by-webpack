@@ -65,7 +65,21 @@
 
 
 
-**到此基本完成vue-cli的功能，之后会加上多入口多页面和公共属性的抽离，以及对js的压缩**
+**到此基本完成vue-cli的功能，之后会加上判断环境和压缩代码的抽离，以及对js的压缩**
 
 - 具体内容可以看源码
 
+##判断环境和压缩代码
+- 安装cross-env
+
+ `npm install --save cross-env`
+>在package.json中的dev改为： "dev": "cross-env NODE_ENV=development webpack-dev-server --hot-only --open",
+
+之后在webpack.config.js中加上判断对NODE_ENV的判断
+
+- 拷贝静态资源地址
+
+ `npm i -D copy-webpack-plugin`
+
+
+**后面会再加上公共代码的抽离，和代码的封装**
