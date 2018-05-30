@@ -77,6 +77,16 @@
 
 之后在webpack.config.js中加上判断对NODE_ENV的判断
 
+效果如图：
+
+生产环境：
+<hr>
+![判断环境](https://i.imgur.com/KDtDr7H.png)
+
+开发环境：
+<hr>
+![判断环境](https://i.imgur.com/MreQQVy.png)
+
 - 拷贝静态资源地址
 
  `npm i -D copy-webpack-plugin`
